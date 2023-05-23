@@ -24,17 +24,17 @@ There are also 7 methods with exception to find by ID since IDs are meant to be 
 ## Browser commands
 This implies the command we can use to interact with the browser we are lanching via selenium script
 
-`Methods`
-driver.get() =Used to open url in browser
-driver.back() => presses the browser's back button
-diver.forward() => presses the browser's forward button
-driver.refresh() =>Refreshes the current page
-driver.maximize_window()
-driver.minimize_window()
-driver.fullscreen_window() => identical to pressing F11 on a windows machine
-driver.close() =>closes the current window
-driver.quit() =>closes all the windows and tabs associated with that webdriver session
+`Methods` <br>
+driver.get() =Used to open url in browser <br>
+driver.back() => presses the browser's back button<br>
+diver.forward() => presses the browser's forward button<br>
+driver.refresh() =>Refreshes the current page<br>
+driver.maximize_window()<br>
+driver.minimize_window()<br>
+driver.fullscreen_window() => identical to pressing F11 on a windows machine<br>
+driver.close() =>closes the current window<br>
+driver.quit() =>closes all the windows and tabs associated with that webdriver session<br><br>
 
-`Property`
-driver.current_url=>This is a property=>Used to read the current URL from the browser's address bar
-driver.title =Reads the current page title from the browser
+`Property`<br>
+driver.current_url=>This is a property=>Used to read the current URL from the browser's address bar<br>
+driver.title =Reads the current page title from the browser<br>
