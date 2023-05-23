@@ -48,4 +48,5 @@ id is an attribute, name is the value of the attribute, we can get the attribute
 <br>
 e.g `attr_value=driver.find_element(By.LINK_TEXT,"Contact").get_attribute("class")` This will return the value of attr class for the element located
 <br>
-## Checking the state of web elements (Enabled or Disabled)
+## Checking the state of web elements (Enabled or Disabled) <br>
+We simply need to locate the element we want to get the state and use the is_enabled() method. `self.state=driver.find_element(By.ID,"login_button").is_enabled()`
