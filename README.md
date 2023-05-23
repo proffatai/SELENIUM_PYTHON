@@ -38,3 +38,14 @@ driver.quit() =>closes all the windows and tabs associated with that webdriver s
 `Property`<br>
 driver.current_url=>This is a property=>Used to read the current URL from the browser's address bar<br>
 driver.title =Reads the current page title from the browser<br>
+
+<br><br>
+## Get the text of a web element
+In order to get the text of a webelement, we need to locate the element (we can use any of the 8 methods to locate the web element first) and then use the text property. The result can be stored in a variable. <br>e.g `text=driver.find_element(By.LINK_TEXT,"Contact").text`
+<br><br>
+## Get value of attributes of a web element. e.g <input id=name>
+id is an attribute, name is the value of the attribute, we can get the attribute value with selenium by firstly locating the element and then using the get_attribute(attrName)
+<br>
+e.g `attr_value=driver.find_element(By.LINK_TEXT,"Contact").get_attribute("class")` This will return the value of attr class for the element located
+<br>
+## Checking the state of web elements (Enabled or Disabled)
