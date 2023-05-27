@@ -9,7 +9,6 @@ driver=webdriver.Chrome(executable_path="C:\\Users\\Ibrahim F A\\Documents\\SELE
 
 
 class RadioButton:
-  #This method is used when the hidden element is still available in the DOM, so we can still get a locator/selector for the element even when it is hidden     
        def checkElement(self):
            driver.get("https://artoftesting.com/samplesiteforselenium")
            driver.find_element(By.ID,"male").click() 
