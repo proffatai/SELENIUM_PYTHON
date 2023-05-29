@@ -14,4 +14,4 @@ time.sleep(3)
 search.screenshot(".//after_search.png") #we are taking screenshot of the element we are pointing at
 driver.find_element(By.ID,"nav-search-submit-button").click()
 time.sleep(3)   
-driver.save_screenshot("..//results.ng") #.. implies we going to the location outside the current directory to store our result
+driver.save_screenshot("..//results.png") #.. implies we going to the location outside the current directory to store our result
