@@ -5,10 +5,6 @@ import time
 #Launching the app with Chrome browser
 driver=webdriver.Chrome(executable_path="C:\\Users\\Ibrahim F A\\Documents\\SELENIUM PYTHON\\BrowserDrivers")
 
-#Clicking on radio button is straightforward, this is done by just clicking the radio button
-#Use is_selected() to verify if a checkbox has been selected or not
-
-
 class DropDown_singleSelect:
        def __init__(self):
            driver.get("https://artoftesting.com/samplesiteforselenium")

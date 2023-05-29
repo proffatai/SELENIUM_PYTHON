@@ -51,4 +51,3 @@ e.g `attr_value=driver.find_element(By.LINK_TEXT,"Contact").get_attribute("class
 ## Checking the state of web elements (Enabled or Disabled) <br>
 We simply need to locate the element we want to get the state and use the is_enabled() method. `self.state=driver.find_element(By.ID,"login_button").is_enabled()`
 
-## Handling Hidden Elements
