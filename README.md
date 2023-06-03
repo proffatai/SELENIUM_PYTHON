@@ -51,3 +51,14 @@ e.g `attr_value=driver.find_element(By.LINK_TEXT,"Contact").get_attribute("class
 ## Checking the state of web elements (Enabled or Disabled) <br>
 We simply need to locate the element we want to get the state and use the is_enabled() method. `self.state=driver.find_element(By.ID,"login_button").is_enabled()`
 
+<br>
+### Handling multiple windows in Selenium Python<br>
+Open the browser and navigate to the required page<br>
+Find the current window's GuID (unique id), so we can return to this base window later<br>
+Click the link/button which opens the multiple windows<br>
+Get all the windows GuIDs,<br>
+Remove base window ID from the above received all ids if only two windows present<br>
+If more than two windows present then iterate and switch to each window and verify their title<br>
+If the title matches then break the loop (iteration), so we can perform operations<br>
+Close the window (optional, saves memory)<br>
+Return back to the base<br>     
