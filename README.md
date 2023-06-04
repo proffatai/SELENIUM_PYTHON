@@ -51,6 +51,9 @@ e.g `attr_value=driver.find_element(By.LINK_TEXT,"Contact").get_attribute("class
 ## Checking the state of web elements (Enabled or Disabled) <br>
 We simply need to locate the element we want to get the state and use the is_enabled() method. `self.state=driver.find_element(By.ID,"login_button").is_enabled()`
 
+## Checking the state of web elements (Visible or not) <br>
+We simply need to locate the element we want to get the visibility and use the is_displayed() method. `self.state=driver.find_element(By.ID,"header").is_displayed()`
+
 <br>
 ### Handling multiple windows in Selenium Python<br>
 Open the browser and navigate to the required page<br>
@@ -62,3 +65,14 @@ If more than two windows present then iterate and switch to each window and veri
 If the title matches then break the loop (iteration), so we can perform operations<br>
 Close the window (optional, saves memory)<br>
 Return back to the base<br>     
+
+### Mouse over events
+This can be done using the Action class. We need to import the ActionClass `from selenium.webdriver import ActionChains` then in order to use, we need to create an object of the ActionChain,`object= ActionChains(driver)` and the go ahead to use the methods available in the class.
+<br>
+element=driver.find_element(By.ID, "element")
+`object.move_to_element(element)` is a method that can be used to over on an element but we need to chain the `.perform()` for it to execute its task
+
+<br>
+`object.context_click(element).perform()` This is to right click on the web element provided as argument. We must have stored the locator of the element inside a variable e.g element and then pass that variable as an argument to the context_click()
+<br>
+`object.double_click(element).perform()` this is to double click on the element provided as argument
