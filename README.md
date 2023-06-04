@@ -75,4 +75,16 @@ element=driver.find_element(By.ID, "element")
 <br>
 `object.context_click(element).perform()` This is to right click on the web element provided as argument. We must have stored the locator of the element inside a variable e.g element and then pass that variable as an argument to the context_click()
 <br>
-`object.double_click(element).perform()` this is to double click on the element provided as argument
+`object.double_click(element).perform()` this is to double click on the element provided as argument <br>
+
+### Waits in Selenium: Implicit, Explicit and Fluent waits
+NB: time.sleep(4) is a static wait in the sense that it forces the test to wait for the complete amount of time mentioned in the sleep() even if the element that is expected has been found. But for Implicit, Explicit and Fluent , they are dynamic waits and they tend to stop execution once the element that is expected to load has appeared rather than waiting for the complete time specified
+
+<br>
+Implicit wait: They are global because the wait time is applicable to all web elements within the script. This wait is used to tell the web driver to wait for some specified period of time when searching for an element(s) if they are immediately available. This wait does not require any expected condition
+
+<br>
+Explicit wait: This is used to tell the web driver to wait until either a particular condition is met or maximum time has passed.It is only applicable to the element specified by the user and not to the entire script. e.g, we can wait for a button to be enabled before we wanna continue. Such wait is an explicit wait since the driver has to wait till that button is enabled
+
+<br>
+Fluent wait: This is similar to the explicit wait. It defines the maximum amount of time to wait for a condion, as well as the frequency with which to check the condition
